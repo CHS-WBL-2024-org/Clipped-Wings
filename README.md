@@ -1,1 +1,1 @@
-We have created an html page containing basic information associtated with our charity hub, Clipped Wings. This HTML will be embedded on our pages of the site. There is also SCSS to add refinement to each page to add more content on the website.
+We have created an HTML page containing basic information associtated with our charity hub, Clipped Wings. This HTML will be embedded on our pages of the site. There is also SCSS to add refinement to each page to add more content on the website.
