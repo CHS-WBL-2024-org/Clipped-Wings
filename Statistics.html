@@ -4,19 +4,121 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Home</title>
-	<link href="assets/css/Statistics.css" rel="stylesheet" type="text/css" />
+	<title>Statistics</title>
+	<link href="assets/ccs/Statistics.scss" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+	<style>
+		.button {
+			display: inline-block;
+			border-radius: 4px;
+			border: none;
+			text-align: center;
+			transition: all 0.5s;
+			cursor: pointer;
+		}
+
+		.button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5;
+		}
+
+		.button span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.55s;
+		}
+
+		.button:hover span {
+			padding-right: 25px;
+		}
+
+		.button:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		li {
+			float: center;
+		}
+
+		li a, .dropbtn {
+			color: black;
+			padding: 14px 16px;
+			text-decoration: none;
+			display: inline-block;
+			border-radius: 4px;
+			border: none;
+			text-align: center;
+			transition: all 0.5s;
+			cursor: pointer;
+		}
+
+		li a:hover, .dropdown:hover .dropbtn {
+			background-color: black;
+		}
+
+		li.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #000000;}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5;
+		}
+	</style>
+	</head>
+
+	<body>
 	<nav>
 		<ul>
 			<li>
-				<a class="index" href="index.html">Home</a>
-				<a class="Contact" href="Contact.html">Contact</a>
-				<a class="Statistics" href="Statistics.html">Statistics</a>
-				<a class="FAQ" href="FAQ.html">FAQ</a>
-				<a class="About_Us" href="About_Us.html">About Us</a>
+				<a class="button" href="index.html">Home</a>
+				<a class="button" href="Statistics.html">Statistics</a>
+				<a class="button" href="Contact.html">Charity Contacts</a>
+				<a class="button" href="FAQ.html">FAQ</a>
+				<li class="dropdown">
+					<a class="dropbtn"><span>About...</span></a>
+					<div class="dropdown-content">
+						<a href="About_Us.html">About Us</a>
+						<a href="About_Charities.html">About Charities</a>
+					</div>
+				</li>
 			</li>
 		</ul>
 	</nav>
@@ -90,7 +192,7 @@
 		</li>
 	</ul>
 	</p>
-	<img src="assets/Screenshot 2024-05-13 1.53.53 PM.png" alt="This is an icon of the House of Ruth logo" width="320"
+	<img src="assets/Screenshot 2024-05-13 1.53.53 PM.png" alt="This is an icon of the RI Coalition Against Domestic Violence logo" width="320"
 		height="220">
 	<ul>
 		<li>
@@ -103,6 +205,23 @@
 			11% came from foundations, corporate support, individual donations, community groups, dues and training fees.
 		</li>
 	</ul>
+	<h3>Continue to Browse Our Site!!</h3>
 </body>
-
+	<nav>
+		<ul>
+			<li>
+				<a class="button" href="index.html">Home</a>
+				<a class="button" href="Statistics.html">Statistics</a>
+				<a class="button" href="Contact.html">Charity Contacts</a>
+				<a class="button" href="FAQ.html">FAQ</a>
+			<li class="dropdown">
+				<a class="dropbtn"><span>About...</span></a>
+				<div class="dropdown-content">
+					<a href="About_Us.html">About Us</a>
+					<a href="About_Charities.html">About Charities</a>
+				</div>
+			</li>
+			</li>
+		</ul>
+	</nav>
 </html>
